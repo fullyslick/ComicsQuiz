@@ -1,0 +1,195 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#202020</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--  Titles Styling-->
+    <style name="TitlesStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">#00FFFFFF</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Questions Holder Styling Portrait-->
+    <style name="QuestionsStyling" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!-- Next/Back Button Styling -->
+    <style name="NextBackStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/trasnperant</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- Question TextView Styling-->
+    <style name="TextViewQuestionStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Images Holder In The Quiz PORTRAIT  -->
+    <style name="ImageBorder" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">#000</item>
+    </style>
+
+
+    <!-- Images In The Quiz-->
+    <style name="ImageStyling" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@color/trasnperant</item>
+        <item name="android:scaleType">centerCrop</item>
+
+    </style>
+
+    <!-- Border of Answers Holder Styling PORTRAIT -->
+    <style name="AnswersHolder" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#000</item>
+    </style>
+
+
+    <!-- Answers Style In The Quiz -->
+    <style name="AnswersStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#F8ECC2</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <!-- CheckBox Center Holder -->
+    <style name="CheckBoxCenter" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <!-- CheckBox Style -->
+    <style name="CheckBoxStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@color/trasnperant</item>
+    </style>
+
+
+    <!-- Radio Groups -->
+    <style name="RadioGroupsStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Radio Buttons-->
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@color/trasnperant</item>
+    </style>
+
+
+    <!-- EditText Style -->
+    <style name="EditTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:hint">@string/hint_text</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <!-- EditText Correct Answers Style-->
+    <style name="CorrectAnswerstStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <!-- End Screen Style-->
+    <style name="EndScreenStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- End TextView Style -->
+    <style name="EndTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#F8ECC2</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+
+    <!-- Submit Buttons Style -->
+    <style name="SubmitButtonsStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@drawable/button_selector</item>
+        <item name="android:background">@color/trasnperant</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+</resources>

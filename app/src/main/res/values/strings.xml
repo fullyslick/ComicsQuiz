@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Comics\u0020\u0020Quiz</string>
+    <string name="begin">Begin</string>
+    <string name="hint_text">Enter Here</string>
+
+    <string name="question1">What is the real name of Wolverine?</string>
+    <string name="correct_answer_1">Correct answer is: Logan</string>
+
+    <string name="question2">Who is that villain?</string>
+    <string name="mrfreeze">Mr. Freeze</string>
+    <string name="penguin">Penguin</string>
+    <string name="joker">Joker</string>
+    <string name="hugostrange">Hugo Strange</string>
+
+    <string name="question3">Which of the following are members of Justice League?</string>
+    <string name="spiderman">Spiderman</string>
+    <string name="batman">Batman</string>
+    <string name="greenlantern">Green Lantern</string>
+    <string name="thor">Thor</string>
+
+    <string name="question4">What is the name of X-Men hero, who can control the weather?</string>
+    <string name="flash">The Flash</string>
+    <string name="aquaman">Aquaman</string>
+    <string name="doomsday">Doomsday</string>
+    <string name="storm">Storm</string>
+
+    <string name="question5">Who is the hero on the picture?</string>
+    <string name="correct_answer_5">Correct answer is: Superman</string>
+
+    <string name="question6">Which of the following are enemies of Spiderman?</string>
+    <string name="droctopus">Dr. Octopus</string>
+    <string name="twoface">Two Face</string>
+    <string name="venom">Venom</string>
+
+    <string name="question7">Tony Stark is the real name of..?</string>
+    <string name="ironman">Iron Man</string>
+
+    <string name="question8">Who is the female hero on the picture?</string>
+    <string name="correct_answer_8">Correct answer is: Catwoman</string>
+
+    <string name="endtext">If you think you are ready hit \"Submit Answers\" to check your results, or hit \"Back To Quiz\" to change your answers!</string>
+    <string name="submitAnswers">Submit Answers</string>
+    <string name="backToQuiz">Back To Quiz</string>
+    <string name="reviewAnswers">Review Your Answers</string>
+    <string name="restart">Restart Quiz</string>
+
+    <string name="scores">Your scores are:\u0020</string>
+    <string name="outof">\u0020out of 10!</string>
+</resources>

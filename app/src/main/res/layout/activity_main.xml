@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.comicsquiz.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/begin_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover_portrait" />
+
+        <TextView
+            android:id="@+id/quiz_title"
+            style="@style/TitlesStyle"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="46sp" />
+
+        <Button
+            android:id="@+id/begin_text"
+            style="@style/TitlesStyle"
+            android:layout_alignParentBottom="true"
+            android:onClick="hideCover"
+            android:text="@string/begin"
+            android:textColor="@drawable/button_selector"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1.5"
+            android:background="#000"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#F8ECC2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    style="@style/NextBackStyle"
+                    android:onClick="showBack"
+                    android:src="@drawable/back_selector" />
+
+                <TextView
+                    android:id="@+id/question_text"
+                    style="@style/TextViewQuestionStyle"
+                    android:text="@string/question1" />
+
+                <ImageButton
+                    android:id="@+id/nextButton"
+                    style="@style/NextBackStyle"
+                    android:onClick="showNext"
+                    android:src="@drawable/next_selector" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question1"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/imageBorder1"
+                style="@style/ImageBorder">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    style="@style/ImageStyling"
+                    android:src="@drawable/image_1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <EditText
+                        android:id="@+id/name_filed_question_1"
+                        style="@style/EditTextStyle" />
+
+                    <TextView
+                        android:id="@+id/correct_answer_1"
+                        style="@style/CorrectAnswerstStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question2"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/joker" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <RadioGroup style="@style/RadioGroupsStyle">
+
+                        <RadioButton
+                            android:id="@+id/jokerradio_1"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/mrfreeze" />
+
+                        <RadioButton
+                            android:id="@+id/jokerradio_2"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/penguin" />
+
+                        <RadioButton
+                            android:id="@+id/jokerradio_3"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/joker" />
+
+                        <RadioButton
+                            android:id="@+id/jokerradio_4"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/hugostrange" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question3"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/justiceleague" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <LinearLayout style="@style/CheckBoxCenter">
+
+                        <CheckBox
+                            android:id="@+id/justiceLeague_1"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/spiderman" />
+
+                        <CheckBox
+                            android:id="@+id/justiceLeague_2"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/batman" />
+
+                        <CheckBox
+                            android:id="@+id/justiceLeague_3"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/greenlantern" />
+
+                        <CheckBox
+                            android:id="@+id/justiceLeague_4"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/thor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question4"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/storm" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <RadioGroup style="@style/RadioGroupsStyle">
+
+                        <RadioButton
+                            android:id="@+id/stormradio_1"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/flash" />
+
+                        <RadioButton
+                            android:id="@+id/stormradio_2"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/aquaman" />
+
+                        <RadioButton
+                            android:id="@+id/stormradio_3"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/doomsday" />
+
+                        <RadioButton
+                            android:id="@+id/stormradio_4"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/storm" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question5"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/superman" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <EditText
+                        android:id="@+id/name_filed_question_5"
+                        style="@style/EditTextStyle" />
+
+                    <TextView
+                        android:id="@+id/correct_answer_5"
+                        style="@style/CorrectAnswerstStyle" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question6"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/spidermanimage" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <LinearLayout style="@style/CheckBoxCenter">
+
+                        <CheckBox
+                            android:id="@+id/spidermanBox_1"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/droctopus" />
+
+                        <CheckBox
+                            android:id="@+id/spidermanBox_2"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/twoface" />
+
+                        <CheckBox
+                            android:id="@+id/spidermanBox_3"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/joker" />
+
+                        <CheckBox
+                            android:id="@+id/spidermanBox_4"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/venom" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question7"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/ironman" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <RadioGroup style="@style/RadioGroupsStyle">
+
+                        <RadioButton
+                            android:id="@+id/ironmanradio_1"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/flash" />
+
+                        <RadioButton
+                            android:id="@+id/ironmanradio_2"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/greenlantern" />
+
+                        <RadioButton
+                            android:id="@+id/ironmanradio_3"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/ironman" />
+
+                        <RadioButton
+                            android:id="@+id/ironmanradio_4"
+                            style="@style/RadioButtonStyle"
+                            android:text="@string/batman" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question8"
+            style="@style/QuestionsStyling"
+            android:visibility="gone">
+            <!--  Default Visibility Is Gone -->
+
+            <LinearLayout style="@style/ImageBorder">
+
+                <ImageButton
+                    style="@style/ImageStyling"
+                    android:src="@drawable/catwoman" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/AnswersHolder">
+
+                <LinearLayout style="@style/AnswersStyle">
+
+                    <EditText
+                        android:id="@+id/name_filed_question_8"
+                        style="@style/EditTextStyle" />
+
+                    <TextView
+                        android:id="@+id/correct_answer_8"
+                        style="@style/CorrectAnswerstStyle" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/endScreen"
+        style="@style/EndScreenStyle"
+        android:background="@drawable/submitscreen"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/endScreenTextHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000">
+
+            <TextView
+                android:id="@+id/endScreenText"
+                style="@style/EndTextStyle"
+                android:text="@string/endtext" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/restartQuiz"
+            style="@style/SubmitButtonsStyle"
+            android:layout_alignParentTop="true"
+            android:onClick="resetQuiz"
+            android:text="@string/restart"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/SubmitButtonsStyle"
+            android:layout_below="@id/endScreenTextHolder"
+            android:layout_marginTop="16dp"
+            android:onClick="submitAnswers"
+            android:text="@string/submitAnswers" />
+
+        <Button
+            android:id="@+id/backToQuiz"
+            style="@style/SubmitButtonsStyle"
+            android:layout_alignParentBottom="true"
+            android:onClick="backToQuiz"
+            android:text="@string/backToQuiz" />
+    </RelativeLayout>
+
+</RelativeLayout>
